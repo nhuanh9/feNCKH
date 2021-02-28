@@ -81,7 +81,7 @@ const routes: Routes = [
     ProfileComponent,
     ContactUsComponent,
     CheckoutComponent,
-    CartComponent,
+    CartComponent
   ],
   exports: [
     MainTopComponent,
