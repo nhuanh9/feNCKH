@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from "./components/pages/users/login/login.component";
 import {RegisterComponent} from "./components/pages/users/register/register.component";
 import {LayoutComponent} from "./components/layout/layout.component";
+import {AdminComponent} from "./components/admin/admin.component";
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
     path: 'users',
     component:LayoutComponent,
     loadChildren: () => import('./modules/layout.module').then(module => module.LayoutModule)
+  },  {
+    path: 'admin',
+    component:AdminComponent,
+    loadChildren: () => import('./modules/admin.module').then(module => module.AdminModule)
   },
   {
     path: '',

@@ -19,12 +19,16 @@ import {LayoutModule} from "./modules/layout.module";
 import { GalleryComponent } from './components/pages/gallery/gallery.component';
 import { WishListComponent } from './components/pages/wish-list/wish-list.component';
 import { AboutComponent } from './components/blocks/about/about.component';
-import { ListProductComponent } from './components/pages/products/list-product/list-product.component';
 import { DetailProductComponent } from './components/pages/products/detail-product/detail-product.component';
 import { ProfileComponent } from './components/pages/users/profile/profile.component';
 import { ContactUsComponent } from './components/blocks/contact-us/contact-us.component';
 import { CheckoutComponent } from './components/blocks/checkout/checkout.component';
 import { CartComponent } from './components/pages/cart/cart.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AccountComponent } from './components/admin/accounts/account/account.component';
+import { ListExpOrderComponent } from './components/admin/export-orders/list-exp-order/list-exp-order.component';
+import { ListImpOrderComponent } from './components/admin/import-orders/list-imp-order/list-imp-order.component';
+import { ListProductManageComponent } from './components/admin/products/list-product-manage/list-product-manage.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { CartComponent } from './components/pages/cart/cart.component';
     LayoutComponent,
     LoginComponent,
     RegisterComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

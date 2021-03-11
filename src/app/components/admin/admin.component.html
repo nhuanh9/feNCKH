@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+          onclick="w3_close()">X</button>
+  <a routerLink="accounts" class="w3-bar-item w3-button">Quản lý tài khoản</a>
+  <a routerLink="products" class="w3-bar-item w3-button">Quản lý sản phẩm</a>
+  <a routerLink="e-orders" class="w3-bar-item w3-button">Quản lý bán hàng</a>
+  <a routerLink="i-orders" class="w3-bar-item w3-button">Quản lý nhập hàng</a>
+  <a routerLink="#" class="w3-bar-item w3-button">Báo cáo thống kê</a>
+</div>
+
+<div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>My Page</h1>
+    </div>
+  </div>
+
+  <div class="w3-container m-5">
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>
+
