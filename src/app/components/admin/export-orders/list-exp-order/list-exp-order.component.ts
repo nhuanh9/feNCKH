@@ -11,5 +11,7 @@ export class ListExpOrderComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  confirmDelete() {
+    confirm("Bạn có chắc chắn xoá không?");
+  }
 }

@@ -22,6 +22,9 @@ const routes: Routes = [
     path: 'accounts',
     component: AccountComponent
   },  {
+    path: '',
+    component: ListProductManageComponent
+  },  {
     path: 'products',
     component: ListProductManageComponent
   }, {
